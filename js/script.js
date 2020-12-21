@@ -47,9 +47,9 @@ function somma(n1,n2){
 }
 
 function pariDispari(n){
-  var risultato = dispari;
+  var risultato = 'dispari';
   if (n % 2 == 0) {
-    risultato = 'pari'
+    risultato = 'pari';
   }
   return risultato;
 }
