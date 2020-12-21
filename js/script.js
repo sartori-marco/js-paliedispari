@@ -8,11 +8,27 @@
 
 var pariDispari = prompt('Scegli pari o dispari').toLowerCase();
 var numero = prompt('Inserisci un numero da 1 a 5');
-var computer = numeroRandom;
+var computer = numeroRandom(1,5);
 
+
+//SOMMA NUMERO UTENTE E NUMERO COMPUTER
+
+var sommaNumeri = somma(numero,computer);
+console.log(sommaNumeri);
 
 
 //*********FUNZIONI*************
 function numeroRandom(min,max){
-  return Math.floor(Math.random() * (max - min) ) + min;
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
+
+
+function somma(n1,n2){
+  return n1 + n2;
+}
+
+
+
+
+
+//
