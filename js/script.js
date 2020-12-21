@@ -8,7 +8,7 @@
 
 // UTENTE SCEGLIE PARI O DISPARI MINUSCOLO + NUMERO DA 1 A 5 + NUMERO DA 1 A 5 PC RANDOM
 
-var pariDispari = prompt('Scegli pari o dispari').toLowerCase();
+var pariOdispari = prompt('Scegli pari o dispari').toLowerCase();
 var numero = prompt('Inserisci un numero da 1 a 5');
 var computer = numeroRandom(1,5);
 
@@ -24,14 +24,12 @@ var sommaNumeri = somma(numero,computer);
 var risultatoTotale = pariDispari(sommaNumeri);
 console.log(risultatoTotale);
 
-if (pariDispari == risultatoTotale) {
+if (pariOdispari == risultatoTotale) {
   console.log('hai vinto');
 }
 else {
   console.log('hai perso');
 }
-
-
 
 
 
@@ -53,7 +51,3 @@ function pariDispari(n){
   }
   return risultato;
 }
-
-
-
-//
